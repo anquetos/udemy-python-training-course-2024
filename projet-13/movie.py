@@ -41,6 +41,21 @@ class Movie:
     def __str__(self):
         return self.title
 
+    @staticmethod
+    def _write_movies(movies):
+        """Write movie(s) to the database"""
+        with open(DB, 'w') as f:
+            json.dump(sorted(movies), f, indent=4)
+
+    @staticmethod
+    def _get_movies():
+        """Read movie(s) from the database"""
+        if DB.stat().st_size == 0:
+            return []
+
+        with open(DB, 'r') as f:
+            return json.load(f)
+
     def add_to_movies(self):
         """Add a new movie in the database"""
         movies = _get_movies()
