@@ -1,0 +1,1 @@
+"C:\Users\thoma\SynologyDrive\Formation\Udemy\formation-complete-python-2024\projets\env\Scripts\python.exe" "C:\Users\thoma\SynologyDrive\Formation\Udemy\formation-complete-python-2024\projets\projet-16\src\manage.py" runserver
